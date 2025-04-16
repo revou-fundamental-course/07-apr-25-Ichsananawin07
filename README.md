@@ -1,15 +1,10 @@
-# WEB COFFEE
-
-***Web Coffe using*** HTML, CSS, & Javascript
-
-**Bagian Head**
-
-```head of html
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>De'Paris Cafe</title>
+    <title>De'Ekpresso Cafe</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,168 +12,189 @@
     <!-- Feather Icons -->
     <!-- <script src="https://unpkg.com/feather-icons"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <!-- icon -->
-    <link rel="shortcut icon" href="img/espresso.jpg" type="image/x-icon" />
-    <!-- Starability CSS -->
-    <link rel="stylesheet" href="css/starability-minified/starability-all.min.css" />
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    
   </head>
-```
-
-**Bagian Navbar**
-
-```navbar in html
-  <nav class="navbar">
-    <a href="#home" class="navbar-logo">De' Paris <span>Cafe</span>.</a>
-    <div class="navbar-nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="navbar-extra">
-      <a href="#" id="search"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div>
-  </nav>
-```
-
-**Bagian Hero**
-
-```hero section in html
-  <section class="hero" id="home">
-    <main class="content">
-      <h1>Mari Nikmati Secangkir <span>Kopi</span>.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nostrum?</p>
-      <a href="#" class="cta">Beli Sekarang</a>
-    </main>
-  </section>
-```
-
-**Bagian About**
-
-```about section in html
-  <section class="about" id="about">
-    <h2><span>About</span> Us</h2>
-    <div class="row">
-      <div class="about-img">
-        <img src="img/coffe_latte.jpg" alt="Tentang Kami" />
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">De' Ekpresso <span>Cafe</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Portofolio</a>
+        <a href="#messageus">Message Us</a>
       </div>
-      <div class="content">
-        <h3>Kenapa memilih <span>kopi</span> kami?</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magnam expedita saepe assumenda corrupti rem!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quo distinctio dolor deserunt consectetur soluta possimus corporis dolorem officiis omnis?</p>
-      </div>
-    </div>
-  </section>
-```
 
-**Bagian Menu**
+    </nav>
+    <br/><br/>
+    <!-- Navbar -->
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <main class="content">
+        <br/>
+        <h1> Hi <span id="name">  </span></h1>
+        <p>Selamat Datang di De'Ekpresso Cafe</p>
+        <p>Kopi terbaik dengan bergaya america classic</p>
 
-```menu section in html
-  <section class="menu" id="menu">
-    <h2><span>Menu</span> Kami.</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda. Deleniti animi voluptatum minima?</p>
-    <div class="row">
-      <div class="menu-card">
-        <img src="img/espresso.jpg" alt="espresso" class="menu-card-image" />
-        <h3 class="menu-card-title">- Espresso -</h3>
-        <p class="menu-card-price">IDR 15k</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/espresso.jpg" alt="espresso" class="menu-card-image" />
-        <h3 class="menu-card-title">- Espresso -</h3>
-        <p class="menu-card-price">IDR 15k</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/espresso.jpg" alt="espresso" class="menu-card-image" />
-        <h3 class="menu-card-title">- Espresso -</h3>
-        <p class="menu-card-price">IDR 15k</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/espresso.jpg" alt="espresso" class="menu-card-image" />
-        <h3 class="menu-card-title">- Espresso -</h3>
-        <p class="menu-card-price">IDR 15k</p>
-      </div>
-    </div>
-  </section>
-```
-
-**Bagian Contact**
-
-```contact section in html
-  <section id="contact" class="contact">
-    <h2><span>Kontak</span> Kami.</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, saepe.</p>
-    <div class="row">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.687740137802!2d117.17040931379827!3d-0.4635546354103913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df678a9d7fd69c3%3A0xcff5345153ae1d6f!2sDe&#39;%20Paris%20Cafe!5e0!3m2!1sid!2sid!4v1674023269999!5m2!1sid!2sid"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="map"
-      ></iframe>
-      <form action="">
-        <div class="input-group">
-          <i data-feather="user"></i>
-          <input type="text" placeholder="Masukan Nama" name="nama" id="nama" />
+        <div class="w3-content w3-section" style="max-width:6000px; height:auto;">
+          <img class="mySlides" src="assets/coffe.jpg" style="width: 250%; height: 1000px;">
+          <img class="mySlides" src="assets/cinta.jpg" style="width: 250%; height: 1000px;">
+          <img class="mySlides" src="assets/espresso.jpg" style="width: 250%;  height: 1000px;">
         </div>
-        <div class="input-group">
-          <i data-feather="mail"></i>
-          <input type="email" placeholder="Masukan Email" name="email" id="email" />
+        
+
+      </main>
+    </section>
+    <!-- Hero -->
+    <!-- About -->
+    <section class="about" id="about">
+      <h2><span>About</span> Us</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="assets/coffe_latte.jpg" alt="Tentang Kami" />
         </div>
-        <div class="input-group">
-          <i data-feather="phone"></i>
-          <input type="text" placeholder="Masukan Nomor HP" name="no_hp" id="no_hp" />
+        <div class="content">
+         <h2>Kenapa Milih Kopi kami?</h2>
+          <p>De'Ekpresso Cafe ini didesian bergaya America. Hadirnya tempat kuliner ini juga menunjang pariwisat,
+             dikonsep hiburan keluarga yang ditampilkan untuk memenuhi kebutuhan hiburan bagi masyarakat. Di sini berbagai macam kopi minuman.</p>
+
+             <section class="vision-mission">
+              <!-- Visi -->
+              <div class="mision">
+            <h2 style="padding-bottom: 10px; font-size: 2em;">Visi Kami</h2>
+          <p class="has-text-color has-text-align-center has-foreground-light-color">
+            "Menjadikan Cafe kopi  sebagai Tempat dan Rasa untuk dikenang bagi para Pelanggan, 
+            dengan memberikan pelayanan yang terbaik, produk yang berkualitas serta tempat dan atmosfir yang nyaman, 
+            sehingga menjadikan Restoran sebagai pilihan utama."
+          </p>
+          </div>
+          <div class="mision">
+            <h2>Misi Kami</h2>
+          <p class="has-text-color has-text-align-center has-foreground-light-color">
+            "Menciptakan atmosfer yang natural dan relax dengan fasilitas-fasilitas yang menunjang demi meningkatkan 
+            kenyamanan pelangan."</p>
+          <p class="has-text-color has-text-align-center has-foreground-light-color">
+            "Kami berkomitmen untuk membentuk tim yang solid yang dapat melayani secara professional serta mempunyai  etika bisnis yang baik."</p>
+          </div>
         </div>
-        <div class="input-inline">
-          <fieldset class="starability-basic">
-            <legend>Rating</legend>
-            <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
-            <input type="radio" id="first-rate1" name="rating" value="1" />
-            <label for="first-rate1" title="Terrible">1 star</label>
-            <input type="radio" id="first-rate2" name="rating" value="2" />
-            <label for="first-rate2" title="Not good">2 stars</label>
-            <input type="radio" id="first-rate3" name="rating" value="3" />
-            <label for="first-rate3" title="Average">3 stars</label>
-            <input type="radio" id="first-rate4" name="rating" value="4" />
-            <label for="first-rate4" title="Very good">4 stars</label>
-            <input type="radio" id="first-rate5" name="rating" value="5" />
-            <label for="first-rate5" title="Amazing">5 stars</label>
-          </fieldset>
+      </div>
+    </section>
+    <!-- About -->
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <h2><span>Premium</span> Quality</h2>
+     
+      <div class="row">
+        <div class="menu-card">
+          <img src="assets/coffe_latte.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Coffe Latte -</h3>
+          <p class="menu-card-price">IDR 10k</p>
         </div>
-        <button type="submit" class="btn">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
-```
+        <div class="menu-card">
+          <img src="assets/brownsugar.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Brown Sugar -</h3>
+          <p class="menu-card-price">IDR 18k</p>
+        </div>
+        <div class="menu-card">
+          <img src="assets/matcha.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Matcha -</h3>
+          <p class="menu-card-price">IDR 20k</p>
+          </div>
+          <div class="menu-card">
+          <img src="assets/americano.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Americano -</h3>
+          <p class="menu-card-price">IDR 10k</p> </div>
+          <div class="menu-card">
+          <img src="assets/caramel.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Caramel -</h3>
+          <p class="menu-card-price">IDR 25k</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu -->
+    
+    <!-- Section find-us dimana user dapat menemukan cafe kami -->
+    <section class="menu" id="menu">
+      <h2><span>Temukan</span> Kami</h2>
+     
+      <div class="row">
+        <div class="menu-card">
+          <img src="assets/Jakarta.jpg" alt="Jakarta" class="menu-card-image" />
+          <h3 class="menu-card-title"> Jakarta</h3>
+          <div class="overlay"></div>
+          
+        </div>
+        <div class="menu-card">
+          <img src="assets/Tasikmalaya.jpg" alt="Tasikmalaya" class="menu-card-image" />
+          <h3 class="menu-card-title">Tasikmalaya</h3>
+          <div class="overlay"></div>
+          
+        </div>
+        
+    </section>
+     <!-- Section find-us dimana user dapat menemukan cafe kami -->
+  
+    <!-- Contact --->
+    <section id="messageus" class="messageus">
 
-**Bagian Footer**
+          <div class="row">
+          <form name="message-form" id = "message-form">
+            <fieldset>
+              <legend>Message Us</legend>
+              
+              Nama:
+              <br/>
+              <input placeholder="Nama" type="text" name="full-name" />
+              <br /><br />
+    
+              Tanggal Lahir:
+              <br/>
+              <input type="date" name="birth-date"  />
+              <br /><br />
+    
+              Jenis Kelamin:
+              <br/>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Laki-laki</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Perempuan</label>
+              <br /><br />
+    
+              Pesan:
+              <br/>
+              <textarea placeholder="Pesan" name="messages"></textarea>
+              <br /><br />
+    
+              <button class="submit" onclick="tampilkanPesan()">Klik tombol ini!</button>
+            </fieldset>
+          
+          </form>
+          </div>
+          <br/> 
+          <div id="sender-data">
+   </div>
+      </div>
+    </section>
+    <!-- Contact -->
 
-```footer section in html
-  <footer>
-    <div class="socials">
-      <a href="https://www.instagram.com/depariscafe/"><i data-feather="instagram"></i></a>
-      <a href="https://www.facebook.com/search/top?q=de%27paris%20cafe"><i data-feather="facebook"></i></a>
-    </div>
-    <div class="links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="credit">
-      <p>Created by <a href="https://github.com/satriai0508">Deuwi Satriya Irawan</a>. | &COPY; 2023</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <div class="credit">
+        <p>Created by <a href="https://github.com/ichsananawin07">Nur Ichsana Nawin Putri</a></p>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
 
-  <script>
-    feather.replace();
-  </script>
-
-  <script src="js/script.js"></script>
 ```
 
 **Tambahkan CSS nya ya :)**
@@ -280,16 +296,7 @@ body {
 /* Navbar */
 
 /* Hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-image: url("../img/coffe-flip.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+
 
 .hero::after {
   content: "";
@@ -298,7 +305,7 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(5, 5, 5, 0) 50%);
 }
 
 .hero .content {
@@ -408,7 +415,7 @@ body {
   margin: auto;
   text-align: center;
   max-width: 30rem;
-  font-weight: 100;
+  font-weight: 700;
   line-height: 1.6;
 }
 
@@ -435,61 +442,15 @@ body {
 /* Menu */
 
 /* Contact */
-.contact .row {
-  display: flex;
-  margin-top: 2rem;
-  background-color: #222;
-  /* flex-wrap: wrap; */
-}
 
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
 
-.contact .row form {
-  flex: 1 1 45rem;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact .row form .input-group {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-  background-color: var(--dark);
-  border: 1px solid #eee;
-  padding-left: 2rem;
-  border-radius: 2rem;
-}
-
-.contact .row form .input-inline {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-}
-
-.contact .row form .input-group input {
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
-  background: none;
-  color: #fff;
-}
-
-.contact .row form .btn {
+.submit {
+  padding: 10px 20px;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
-  border-radius: 2rem;
-  background-color: var(--primary);
-  color: var(--white);
 }
 /* Contact */
 
@@ -499,29 +460,6 @@ footer {
   text-align: center;
   padding: 1rem 3rem;
   margin-top: 3rem;
-}
-
-footer .socials {
-  padding: 1rem 0;
-}
-
-footer .socials a {
-  color: var(--white);
-  margin: 1rem;
-}
-
-footer .socials a:hover,
-footer .links a:hover {
-  color: var(--dark);
-}
-
-footer .links {
-  margin-bottom: 1.6rem;
-}
-
-footer .links a {
-  color: var(--white);
-  padding: 0.7rem 1rem;
 }
 
 footer .credit {
@@ -547,75 +485,7 @@ footer .credit a {
     font-size: 62.5%;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
 
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: var(--white);
-    width: 30rem;
-    height: 100vh;
-    transition: 0.4s;
-  }
-
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .navbar .navbar-nav a {
-    color: var(--dark);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .menu p {
-    font-size: 1.2rem;
-  }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
-  }
-}
 
 /* Mobile */
 @media (max-width: 450px) {
@@ -624,27 +494,60 @@ footer .credit a {
   }
 }
 /* Media Query */
-```
 
 **Tambahkan sedikit javascript, kalau cuma html sama css aja kurang. Ibarat sayur tanpa garam.**
 
 ```javascript
-const navbarNav = document.querySelector(".navbar-nav");
+function replaceName(){
+let name = prompt("Halo siapakah nama anda?", "");
+document.getElementById("name").innerHTML = name;
+}
+replaceName();
 
-const hamburgerMenu = document.querySelector("#hamburger-menu");
-hamburgerMenu.onclick = () => {
-  navbarNav.classList.toggle("active");
-};
+function validateForm() {
 
-document.addEventListener("click", function (e) {
-  if (!hamburgerMenu.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
+    const name = document.forms["message-form"]["full-name"].value;
+    const birthDate = document.forms["message-form"]["birth-date"].value;
+    const gender = document.forms["message-form"]["gender"].value;
+    const message = document.forms["message-form"]["messages"].value;
+
+    if (!name ||  !birthDate || !gender || !message) {
+      alert("Semua field harus diisi!");
+      return false;
+    }
+
+    setSenderUI(name, birthDate, gender, message);
+    return true;
   }
-});
-```
 
-Hasil jadinya
+  function setSenderUI(name, birthDate, gender, messages) {
+    const displayArea = document.getElementById("sender-data");
 
-![De'Paris Cafe!](img/De-Paris-Cafe.png "Landing Page Web Cafe")
+    displayArea.innerHTML = `
+      <h3>Data Pengirim</h3>
+      <p><strong>Nama:</strong> ${name}</p>
+      <p><strong>Tanggal Lahir:</strong> ${birthDate}</p>
+      <p><strong>Jenis Kelamin:</strong> ${gender}</p>
+      <p><strong>Pesan:</strong> ${messages}</p>
+      `
+    ;
+  }
+  document.getElementById("message-form").addEventListener('submit', (e) => {
+    e.preventDefault()
+    validateForm()
+})
 
-Hasil jadi yang di hosting di Github Pages [De'Paris Cefe](https://satriai0508.github.io/web-paris-cafe)
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
